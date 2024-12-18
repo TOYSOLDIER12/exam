@@ -1,0 +1,7 @@
+type Song {
+    title : String
+    url : String
+    duration : String
+    artist : String
+    album : String
+}
