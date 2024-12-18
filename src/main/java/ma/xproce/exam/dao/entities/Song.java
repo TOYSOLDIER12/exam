@@ -3,8 +3,6 @@ package ma.xproce.exam.dao.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.net.ProtocolFamily;
-import java.util.List;
 
 @Entity
 @AllArgsConstructor

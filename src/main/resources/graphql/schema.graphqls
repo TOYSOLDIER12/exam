@@ -1,7 +1,23 @@
 type Song {
+    id_song : Float
     title : String
     url : String
     duration : String
     artist : String
     album : String
+}
+input SongRequest {
+    title : String
+    url : String
+    duration : String
+    artist : String
+    album : String
+}
+
+type Mutation{
+    saveSong(SongRequest: SongRequest): Song
+}
+
+type Query {
+    getSongByTitle(title : String) : Song
 }
