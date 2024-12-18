@@ -11,7 +11,8 @@ public class SongManager implements SongService{
     private SongRepository songRepository;
     @Override
     public Song getSongByTitle(String title) {
-        return songRepository.findByTitle(title);
+        Song song = songRepository.findByTitle(title).orElse(null);
+        return song;
     }
 
     @Override
