@@ -23,7 +23,7 @@ public class SongGraphlQLController {
         return songService.getSongByTitle(title);
     }
     @MutationMapping
-    public Song saveCreator(@Argument("SongRequest") SongDto songDto){
+    public Song saveSong(@Argument("SongRequest") SongDto songDto){
         if (songDto == null) {
             throw new IllegalArgumentException("songDto cannot be null");
         }
